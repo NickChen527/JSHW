@@ -1,0 +1,55 @@
+html,
+body,
+section {
+  height: 100%;
+}
+
+body {
+  background-color: #dde2eb;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  min-width: 400px;
+  min-height: 100px;
+  background-color: #79aaf7;
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
+  font-size: 24px;
+}
+.container {
+  .row {
+    display: flex;
+    margin-bottom: 2px;
+    .col {
+      width: 100px;
+      text-align: center;
+      margin-right: 2px;
+      &:nth-child(1) {
+        width: 50px;
+      }
+    }
+    &:nth-child(odd){
+      .col{
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+    &:nth-child(even){
+      .col{
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+    }
+    &:nth-child(1){
+      .col{
+        background-color: rgba(255, 255, 255, 0.8);
+        font-weight: bold;
+      }
+    }
+  }
+}
